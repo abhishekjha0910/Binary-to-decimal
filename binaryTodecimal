@@ -1,0 +1,21 @@
+public static void binTodec(int binnum){
+  int mynum = binnum;
+  int pow = 0;
+  int decnum = 0;
+   while(binnum>0){
+    int lastDigit = binnum % 10;
+    decnum = decnum + lastDigit*(int)math.pow(2,pow);
+    pow++;
+    binnum = binnum / 10;
+  }
+  System.out.println("decimal of " + mynum + "=" + decnum;
+}
+public static void main(string args[]){
+  binnum(101);// you can keep any of the binary number over here and calculate the decimal form of it .
+}
+
+
+
+#output--------------------
+
+decimal of 101 = 5
